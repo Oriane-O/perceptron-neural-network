@@ -34,6 +34,7 @@ class Perceptron:
 
 					# update the weight matrix
 					self.W += -self.alpha * error * x
+		print("Final weights:", self.W)
 
 	def predict(self, X, addBias=True):
 		# ensure our input is a matrix
